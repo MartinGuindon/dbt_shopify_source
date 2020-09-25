@@ -17,3 +17,7 @@ vars:
     order_line_source: "{{ source('shopify','order_line') }}"
     order_source: "{{ source('shopify','order') }}"
     product_source: "{{ source('shopify','product') }}"
+
+models:
+  shopify_source:
+    materialized: view
